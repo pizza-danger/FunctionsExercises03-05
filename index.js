@@ -6,8 +6,15 @@
 //d) Below the function, define and initialize a variable to hold a string.
 //e) Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 //f) Use method chaining to reduce the lines of code within the function.
+let string1 = 'apple';
 
-
+//1.a
+function reverseCharacters(string) {
+  let lettersArray = (string).split('');
+  let reversedLettersArray = lettersArray.reverse();
+  return reversedLettersArray.join('');
+}
+console.log(reverseCharacters(string1));
 
 //2) The 'split' method does not work on numbers, but we want the function to return a number with all the digits reversed (e.g. 1234 converts to 4321 and NOT the string "4321")
 //a) Add an if statement to your reverseCharacters function to check the typeof the parameter.
