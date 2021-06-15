@@ -9,10 +9,19 @@
 let string1 = 'apple';
 
 //1.a
-function reverseCharacters(string) {
+/*function reverseCharacters(string) {
   let lettersArray = (string).split('');
   let reversedLettersArray = lettersArray.reverse();
   return reversedLettersArray.join('');
+}
+let string1Reverse = reverseCharacters(string1);
+console.log(reverseCharacters(string1));
+*/
+
+//1.f
+function reverseCharacters(string) {
+  let reverseString = (string).split('').reverse().join('');
+  return reverseString;
 }
 console.log(reverseCharacters(string1));
 
